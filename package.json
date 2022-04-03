@@ -2,12 +2,12 @@
   "name": "topfollow",
   "version": "1.0.0",
   "description": "lending",
-  "source": "index.html",
-  "homepage": "https://github.com/RomanVoznyy/Topfollow-test/",
+  "main": "index.js",
+  "homepage": "https://github.com/RomanVoznyy/topfollow-test",
   "scripts": {
     "dev": "parcel src/*.html --no-source-maps",
     "build": "parcel build src/*.html",
-    "predeploy": "npm run build -- --public-url /Topfollow-test/",
+    "predeploy": "npm run build -- --public-url /topfollow-test/",
     "deploy": "gh-pages -d dist"
   },
   "repository": {
