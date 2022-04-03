@@ -1,0 +1,155 @@
+.section.main {
+  padding-top: 0;
+}
+
+.mainpage {
+  width: 100%;
+  min-height: 100vh;
+  padding: 26px 21px;
+  color: $primary-bg-color;
+
+  background-image: url('../images/bg_mainpage/mainpage_mobile.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: url('../images/bg_mainpage/mainpage_mobile@2x.webp');
+  }
+
+  @media screen and (min-device-pixel-ratio: 3),
+    screen and (min-resolution: 288dpi),
+    screen and (min-resolution: 3dppx) {
+    background-image: url('../images/bg_mainpage/mainpage_mobile@3x.webp');
+  }
+
+  //more than mobile
+  @media screen and (min-width: ($tablet + 1)) {
+    @include flex(center, stretch);
+    padding: 65px 47px 60px 80px;
+    background-image: url('../images/bg_mainpage/mainpage_desktop.webp');
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url('../images/bg_mainpage/mainpage_desktop@2x.webp');
+    }
+
+    @media screen and (min-device-pixel-ratio: 3),
+      screen and (min-resolution: 288dpi),
+      screen and (min-resolution: 3dppx) {
+      background-image: url('../images/bg_mainpage/mainpage_desktop@3x.webp');
+    }
+  }
+}
+
+.actionblock {
+  width: 100%;
+  text-align: center;
+
+  @media screen and (min-width: ($tablet + 1)) {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+  }
+}
+
+.pictureblock {
+  width: 100%;
+  margin-left: -20px;
+
+  @media screen and (min-width: ($tablet + 1)) {
+    width: 50%;
+    margin-left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+.slogan {
+  @include font(800, 8.5vw);
+  margin-bottom: 16px;
+
+  @media screen and (min-width: ($tablet + 1)) {
+    @include font(800, 4.8vw);
+    margin-bottom: 40px;
+  }
+}
+
+.description {
+  @include font(400, 3.2vw);
+  margin-bottom: 24px;
+
+  @media screen and (min-width: ($tablet + 1)) {
+    @include font(400, 1.5vw);
+    margin-bottom: 40px;
+  }
+
+  .main-accent {
+    font-weight: 800;
+  }
+
+  .accent {
+    font-weight: 700;
+  }
+}
+
+.buttonbox {
+  max-width: 320px;
+  margin: 0 auto;
+  margin-bottom: 28px;
+
+  @media screen and (min-width: ($tablet + 1)) {
+    margin: 0;
+  }
+
+  a {
+    width: 100%;
+    min-height: 75px;
+    @include flex();
+    padding: 20px;
+
+    @include font(700, 5.3vw);
+
+    border: 3px solid $primary-bg-color;
+    border-radius: 7px;
+    color: $primary-bg-color;
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+
+    &.accent {
+      color: $primary-light-font-color;
+      background-color: $primary-bg-color;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 12px;
+    }
+
+    &:last-child {
+      padding: 25px;
+    }
+
+    & svg {
+      width: 9.6vw;
+      height: 9.6vw;
+      fill: currentColor;
+      margin-right: 10px;
+    }
+
+    @media screen and (min-width: ($mobile + 1)) {
+      font-size: 20px;
+
+      & svg {
+        width: 36px;
+        height: 36px;
+      }
+    }
+  }
+}

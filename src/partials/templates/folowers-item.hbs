@@ -1,0 +1,15 @@
+{{#each this}}
+ <li class="folowers-item" data-id={{id}}>
+        <div class="prices-box">          
+          <span class="newprice">${{newprice}}</span>
+          <span class="oldprice">${{oldprice}}</span>          
+        </div>
+        <div class="count-box">
+          <span class="followers-count">{{count}}</span>
+          <span class="followers-text">{{type}}</span>
+        </div>
+        <div class="discont-box">
+        <span class="discont">Save {{discont}}</span>
+        </div>
+      </li>
+{{/each}}

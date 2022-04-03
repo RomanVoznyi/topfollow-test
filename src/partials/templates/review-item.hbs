@@ -1,0 +1,65 @@
+{{#each this}}
+ <li class="review-item">
+      <div class="review-box">
+        <picture class="picture-user">
+        <source
+          srcset="
+            {{foto1}}    82w,
+             {{foto2}}    164w,
+             {{foto3}}    246w,
+          "
+          type="image/webp"         
+          sizes="10vw"
+        />
+        <img         
+          sizes="82px, 10vw"
+          src={{foto0}},
+          alt="user"
+        />
+      </picture>
+      <p class="review-text">{{text}}</p>
+      </div>
+      <div class="vote-box">
+       <div class="vote-stars-box ">
+          <div class="stars-box clear">
+          <svg width="22" height="22" class="star-icon">
+             <use href={{star}}#icon-star />
+          </svg>
+          <svg width="22" height="22" class="star-icon">
+             <use href={{star}}#icon-star />
+          </svg>
+          <svg width="22" height="22" class="star-icon">
+             <use href={{star}}#icon-star />
+          </svg>
+          <svg width="22" height="22" class="star-icon">
+             <use href={{star}}#icon-star />
+          </svg>
+          <svg width="22" height="22" class="star-icon">
+             <use href={{star}}#icon-star />
+          </svg>          
+        </div>
+        <div class="stars-box-outer">
+          <div class="stars-box fill">
+          <svg width="22" height="22" class="star-icon">
+             <use href={{star}}#icon-star />
+          </svg>
+          <svg width="22" height="22" class="star-icon">
+             <use href={{star}}#icon-star />
+          </svg>
+          <svg width="22" height="22" class="star-icon">
+             <use href={{star}}#icon-star />
+          </svg>
+          <svg width="22" height="22" class="star-icon">
+             <use href={{star}}#icon-star />
+          </svg>
+          <svg width="22" height="22" class="star-icon">
+             <use href={{star}}#icon-star />
+          </svg>          
+        </div>
+        </div>
+       </div>
+        <span class="review-vote">{{vote}}</span>
+        <span class="username">- {{name}}</span>
+      </div>
+    </li>
+{{/each}}

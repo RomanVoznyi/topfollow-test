@@ -1,0 +1,47 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+$basic-font: 'Nunito', sans-serif;
+$logo-font: 'Pacifico', cursive;
+$code-font: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+
+// Colors
+// Main colors
+$primary-light-font-color: #bb39bc;
+$primary-dark-font-color: #8332b4;
+$secondary-dark-font-color: #0028b7;
+$success-font-color: #00966d;
+$title-font-color: #14142b;
+$label-font-color: #6e7191;
+$placeholder-font-color: #a0a3bd;
+$count-font-color: #ffffff;
+$benefit-font-color: #000000;
+
+$gradient-1: #ed017f;
+$gradient-2: #7f33b5;
+$primary-bg-color: #f7f7fc;
+$offwhite-bg-color: #fcfcfc;
+$header-bg-color: #14142b;
+$gradient-bg-mainpage: linear-gradient(45deg, $gradient-1, $gradient-2);
+$gradient-bg-buypage: linear-gradient(114.44deg, $gradient-1, $gradient-2);
+$input-bg-color: #eff0f6;
+$popup-input-bg-color: #eff0f7;
+$menu-bg-color: #4e4b66;
+$success-bg-color: #00ba88;
+$howstage-blue-color: rgb(28, 150, 238, 0.3);
+$howstage-purple-color: rgb(187, 57, 188, 0.3);
+$howstage-green-color: rgb(0, 186, 136, 0.3);
+$line-color: #d6d8e7;
+$video-bg-color: #c4c4c4;
+$stars-bg-color: #f4b740;
+$popup-overlay: rgb(0, 0, 0, 0.8);
+
+// Shadow colors
+$radio-shadow: 0px 4px 32px rgba(168, 67, 67, 0.08);
+$button-shadow: 12px 12px 45px rgba(0, 0, 0, 0.1);
+$logo-shadow: 6px 6px 45px rgba(203, 177, 249, 0.36);
+$popup-radio-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+// Timing
+$timing-function: cubic-bezier(0.4, 0, 0.2, 1);

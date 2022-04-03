@@ -1,0 +1,189 @@
+.howpage {
+  width: 100%;
+  min-height: 575px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+
+  background-image: url('../images/bg_howpage/howpage_mobile.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: url('../images/bg_howpage/howpage_mobile@2x.webp');
+  }
+
+  @media screen and (min-device-pixel-ratio: 3),
+    screen and (min-resolution: 288dpi),
+    screen and (min-resolution: 3dppx) {
+    background-image: url('../images/bg_howpage/howpage_mobile@3x.webp');
+  }
+
+  //more than mobile
+  @media screen and (min-width: ($tablet + 1)) {
+    padding-left: 60px;
+    padding-right: 60px;
+
+    background-image: url('../images/bg_howpage/howpage.webp');
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url('../images/bg_howpage/howpage@2x.webp');
+    }
+
+    @media screen and (min-device-pixel-ratio: 3),
+      screen and (min-resolution: 288dpi),
+      screen and (min-resolution: 3dppx) {
+      background-image: url('../images/bg_howpage/howpage@3x.webp');
+    }
+  }
+}
+
+.how-header {
+  @media screen and (min-width: ($tablet + 1)) {
+    margin-bottom: 20px;
+  }
+}
+
+.how-reason-text {
+  margin: 0 auto 24px;
+  color: $title-font-color;
+  font-size: 3.7vw;
+
+  @media screen and (min-width: ($tablet + 1)) {
+    width: 60%;
+    margin-bottom: 32px;
+    font-size: 1.53vw;
+  }
+}
+
+.how-doing-text {
+  margin: 0 auto 24px;
+  color: $label-font-color;
+  font-size: 3.7vw;
+  text-align: left;
+
+  @media screen and (min-width: ($tablet + 1)) {
+    width: 60%;
+    margin-bottom: 32px;
+    font-size: 1.53vw;
+    text-align: center;
+  }
+}
+
+.how-offer-text {
+  margin: 0 auto 24px;
+  color: $label-font-color;
+  font-size: 3.7vw;
+  text-align: left;
+
+  @media screen and (min-width: ($tablet + 1)) {
+    width: 47%;
+    margin-bottom: 32px;
+    font-size: 1.53vw;
+    text-align: center;
+  }
+}
+
+.how-offer-accent {
+  font-weight: 700;
+  color: $primary-light-font-color;
+}
+
+.stage-list {
+  width: 100%;
+
+  @media screen and (min-width: ($tablet+1)) {
+    @include flex(center, stretch);
+    margin: 0 auto;
+    width: 75vw;
+  }
+}
+
+.stage-item {
+  position: relative;
+  width: 100%;
+  padding: 10px;
+  text-align: left;
+  font-size: 14px;
+  border-radius: 10px;
+  background-position: right 20px bottom 20px;
+  background-repeat: no-repeat;
+
+  @media screen and (min-width: ($tablet+1)) {
+    display: block;
+    width: calc((100% - 48px) / 3);
+    text-align: center;
+  }
+
+  &:nth-child(1) {
+    margin-right: 0;
+    margin-bottom: 24px;
+    color: $secondary-dark-font-color;
+    background-color: $howstage-blue-color;
+    background-image: url('../images/svgs/box.svg');
+    background-size: 80px 80px;
+
+    @media screen and (min-width: ($tablet+1)) {
+      margin-right: 24px;
+      margin-bottom: 0;
+    }
+  }
+
+  &:nth-child(2) {
+    margin-right: 0;
+    margin-bottom: 24px;
+    color: $primary-dark-font-color;
+    background-color: $howstage-purple-color;
+    background-image: url('../images/svgs/attantion.svg');
+    background-size: 64px 64px;
+
+    @media screen and (min-width: ($tablet+1)) {
+      margin-right: 24px;
+      margin-bottom: 0;
+    }
+  }
+
+  &:nth-child(3) {
+    color: $success-font-color;
+    background-color: $howstage-green-color;
+    background-image: url('../images/svgs/diagram.svg');
+    background-size: 80px 80px;
+  }
+}
+
+.stage-title-box {
+  @include flex(left);
+  margin-bottom: 10px;
+  color: $secondary-dark-font-color;
+  font-weight: 700;
+
+  &.one {
+    color: $secondary-dark-font-color;
+  }
+
+  &.two {
+    color: $primary-dark-font-color;
+  }
+  &.three {
+    color: $success-font-color;
+  }
+}
+
+.how-number {
+  @include flex();
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  margin-right: 16px;
+  background-color: $offwhite-bg-color;
+}
+
+.stage-text {
+  padding: 0 38px 18px 12px;
+  text-align: left;
+}

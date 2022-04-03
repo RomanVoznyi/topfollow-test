@@ -1,0 +1,15 @@
+{{#each this}}
+ <li class="faq-item">
+      <div class="faq-question-box ">
+        <h3 class="question">{{question}}</h3>
+        <img
+          class="faq-icon minus"
+          src={{iconMinus}}
+          alt="icon-minus"
+        />
+        <img class="faq-icon plus"  src={{iconPlus}} alt="icon-plus" />
+      </div>
+      <p class="faq-text">{{text}}       
+      </p>
+    </li>
+{{/each}}

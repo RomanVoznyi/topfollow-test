@@ -1,0 +1,92 @@
+<div class="popup-overflow is-hidden">
+  <div class="popup">
+    <h2 class="page-header">Checkout</h2>
+    <div class="popup-item"></div>
+    <div class="popup-amount-box">
+      <span class="popup-total-text">Total amount due:</span>
+      <span class="popup-total"></span>
+    </div>
+    <div class="popup-radio-box">
+      <input
+        class="popup-radio-btn"
+        type="radio"
+        name="card"
+        id="card"
+        checked
+      />
+      <label class="popup-radio-label" for="card" name="card">
+        <img src="./images/svgs/creditcard_white.svg" alt="icon-card" />
+      </label>
+      <input class="popup-radio-btn" type="radio" name="card" id="paypal" />
+      <label class="popup-radio-label" for="paypal" name="card">
+        <img src="./images/svgs/paypal_short.svg" alt="icon-paypal" />
+      </label>
+      <input class="popup-radio-btn" type="radio" name="card" id="ipay" />
+      <label class="popup-radio-label" for="ipay" name="card">
+        <img src="./images/svgs/ipay_black.svg" alt="icon-ipay" />
+      </label>
+    </div>
+    <form class="card-form js-popup-service" autocomplete="off">
+      <div class="card-inner-box">
+        <h4 class="card-title">Card number</h4>
+        <label class="card-item-box">
+          <input
+            class="card-item"
+            type="text"
+            name="cardnumber"
+            pattern="^\d{4}\d{4}\d{4}\d{4}$"
+            placeholder="0000 0000 0000 0000"
+            title="format - 0000000000000000"
+            required
+          />
+          <img
+            src="./images/svgs/mastercard.svg"
+            class="popup-card-icon"
+            width="46"
+            alt="icon-card"
+          />
+        </label>
+        <h4 class="card-title">Cardholder’s name</h4>
+        <label class="card-item-box">
+          <input
+            class="card-item"
+            type="text"
+            name="cardholder"
+            pattern="^[A-Za-z]+$"
+            title="format - latine letters [A-Za-z]"
+            placeholder="Name"
+            required
+          />
+        </label>
+        <h4 class="card-title">Expiry date</h4>
+        <label class="card-item-box">
+          <input
+            class="card-item"
+            type="text"
+            name="expiry"
+            pattern="^\d{2}\/\d{4}$"
+            title="format - MM/YYYY"
+            placeholder="MM/YYYY"
+            required
+          />
+        </label>
+        <h4 class="card-title">CVV</h4>
+        <label class="card-item-box">
+          <input
+            class="card-item"
+            type="text"
+            name="cvv"
+            pattern="^\d{3}$"
+            title="format - 123"
+            placeholder="3 digit"
+            required
+          />
+        </label>
+      </div>
+      <button type="submit" class="card-button">Buy now</button>
+    </form>
+    <p class="popup-payment-text">
+      A payment confirmation message will be sent to your email address
+    </p>
+  </div>
+</div>

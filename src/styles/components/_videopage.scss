@@ -1,0 +1,50 @@
+.videopage {
+  width: 100%;
+  min-height: 600px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+
+  @media screen and (max-width: ($mobile)) {
+    background-image: url('../images/bg_videopage/videopage.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url('../images/bg_videopage/videopage@2x.webp');
+    }
+
+    @media screen and (min-device-pixel-ratio: 3),
+      screen and (min-resolution: 288dpi),
+      screen and (min-resolution: 3dppx) {
+      background-image: url('../images/bg_videopage/videopage@3x.webp');
+    }
+  }
+
+  @media screen and (min-width: ($mobile + 1)) {
+    height: 800px;
+    padding-left: 32px;
+    padding-right: 32px;
+    background-color: $primary-bg-color;
+  }
+}
+
+.page-header.video-header {
+  margin-bottom: 98px;
+
+  @media screen and (min-width: ($mobile + 1)) {
+    margin-bottom: 178px;
+  }
+}
+
+.video {
+  width: 100%;
+  max-width: 280px;
+  height: 100vw;
+  max-height: 280px;
+  margin: 0 auto;
+  background-color: $video-bg-color;
+}

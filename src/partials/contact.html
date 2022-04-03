@@ -1,0 +1,65 @@
+<section class="section contactpage">
+  <h2 class="page-header contact">Get in touch</h2>
+  <form class="contact-form js-service" autocomplete="off">
+    <div class="contact-inner-box">
+      <p class="helptext">
+        If you have any questions about our Instagram growth services, please
+        send us a message below.
+      </p>
+      <label class="contact-item-box">
+        <input
+          class="contact-item"
+          type="text"
+          name="name"
+          placeholder=" "
+          required
+        />
+        <span class="contact-title">Name</span>
+      </label>
+      <label class="contact-item-box">
+        <input
+          class="contact-item"
+          type="email"
+          name="email"
+          placeholder=" "
+          required
+        />
+        <span class="contact-title">E-mail</span>
+      </label>
+      <label class="contact-item-box">
+        <select class="contact-item-select" name="reason" required>
+          <option value="0" hidden=""></option>
+          <option value="1">issue with order</option>
+          <option value="2">loading issue</option>
+          <option value="3">payment issue</option>
+        </select>
+        <span class="contact-title">Reason</span>
+        <img
+          class="contact-select-icon"
+          src="./images/svgs/arrow.svg"
+          alt="check-img"
+        />
+      </label>
+      <label class="contact-item-box" id="order">
+        <input
+          class="contact-item"
+          type="text"
+          name="ordernumber"
+          placeholder=" "
+          required
+        />
+        <span class="contact-title">Order number</span>
+      </label>
+      <label class="contact-item-box" id="message">
+        <textarea
+          class="contact-item textarea"
+          rows="4"
+          name="message"
+          placeholder=" "
+        ></textarea>
+        <span class="contact-title">Message</span>
+      </label>
+    </div>
+    <button type="submit" class="contact-button">Contact us</button>
+  </form>
+</section>

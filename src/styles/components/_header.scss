@@ -1,0 +1,35 @@
+.header {
+  @include flex(left);
+  flex-grow: 1;
+  color: $primary-bg-color;
+  background-color: $header-bg-color;
+
+  @media screen and (max-width: $tablet) {
+    padding: 13px 20px;
+  }
+
+  @extend %hidden;
+}
+
+.header-logo {
+  @include font(400, 34px, 1.2, 0, $logo-font);
+}
+
+.menu {
+  width: 44px;
+  height: 44px;
+  @include flex();
+  margin-left: auto;
+  padding: 16px 10px;
+
+  border: none;
+  border-radius: 16px;
+  color: inherit;
+  background-color: $menu-bg-color;
+  outline: none;
+  cursor: pointer;
+}
+
+.menu-icon {
+  fill: currentColor;
+}

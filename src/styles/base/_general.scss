@@ -1,0 +1,93 @@
+:root {
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  // outline: 1px solid tomato;
+}
+
+body {
+  @include font();
+
+  &.modal-open {
+    overflow: hidden;
+  }
+}
+
+code {
+  font-family: $code-font;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img,
+picture {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.visually-hidden {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  border: none;
+  overflow: hidden;
+}
+
+.section {
+  max-width: $desktop;
+  padding: 16px 0;
+  border-bottom: 1px solid $line-color;
+
+  //more than tablet
+  @media screen and (min-width: ($tablet + 1)) {
+    padding: 32px 0;
+  }
+}
+
+#back-to-top {
+  @include flex();
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  // background-color: $gradient-bg-color;
+  // color: $font-color-rev;
+
+  & svg {
+    margin: 0;
+    width: 30px;
+    height: 30px;
+  }
+
+  @media screen and (min-width: ($desktop)) {
+    width: 56px;
+    height: 56px;
+
+    & svg {
+      margin: 0;
+      width: 40px;
+      height: 40px;
+    }
+  }
+}

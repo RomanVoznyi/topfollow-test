@@ -1,0 +1,98 @@
+.faqpage {
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+  overflow-y: scroll;
+
+  @media screen and (max-width: ($mobile)) {
+    background-image: url('../images/bg_faqpage/faqpage_mobile.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url('../images/bg_faqpage/faqpage_mobile@2x.webp');
+    }
+
+    @media screen and (min-device-pixel-ratio: 3),
+      screen and (min-resolution: 288dpi),
+      screen and (min-resolution: 3dppx) {
+      background-image: url('../images/bg_faqpage/faqpage_mobile@3x.webp');
+    }
+  }
+
+  @media screen and (min-width: ($mobile + 1)) {
+    padding-left: 32px;
+    padding-right: 32px;
+    background-color: $primary-bg-color;
+  }
+}
+
+.faq-list {
+  width: 100%;
+  margin: 0 auto;
+
+  @media screen and (min-width: ($tablet+1)) {
+    width: 75vw;
+  }
+}
+
+.faq-item {
+  width: 100%;
+  padding: 16px 20px 9px 16px;
+  background-color: $offwhite-bg-color;
+  border-radius: 10px;
+
+  font-size: 14px;
+  color: $primary-dark-font-color;
+  cursor: pointer;
+
+  &:not(:last-child) {
+    margin-bottom: 16px;
+  }
+}
+
+.faq-question-box {
+  position: relative;
+  @include flex(left);
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.question {
+  text-align: left;
+}
+
+.faq-icon {
+  width: 24px;
+  height: auto;
+  margin-left: auto;
+}
+
+.minus {
+  display: none;
+
+  .faq-item.open & {
+    display: block;
+  }
+}
+
+.plus {
+  display: block;
+
+  .faq-item.open & {
+    display: none;
+  }
+}
+
+.faq-text {
+  text-align: left;
+  display: none;
+
+  .faq-item.open & {
+    display: block;
+  }
+}
