@@ -11,29 +11,29 @@ var e,t=arguments[3];!function(t,r){"object"==typeof exports&&"object"==typeof m
 },{"handlebars/dist/handlebars.runtime":"pAws"}],"zLhZ":[function(require,module,exports) {
 "use strict";Object.defineProperty(exports,"__esModule",{value:!0}),exports.default=void 0;var n=l(require("handlebars/dist/handlebars.runtime"));function l(n){return n&&n.__esModule?n:{default:n}}function e(n){return(e="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(n){return typeof n}:function(n){return n&&"function"==typeof Symbol&&n.constructor===Symbol&&n!==Symbol.prototype?"symbol":typeof n})(n)}var o=n.default.template({compiler:[8,">= 4.3.0"],main:function(n,l,o,t,a){var p,c=null!=l?l:n.nullContext||{},r=n.hooks.helperMissing,s="function",u=n.escapeExpression,i=n.lookupProperty||function(n,l){if(Object.prototype.hasOwnProperty.call(n,l))return n[l]};return'      <div class="popup-prices-box">\r\n        <span class="popup-newprice">'+u(e(p=null!=(p=i(o,"newprice")||(null!=l?i(l,"newprice"):l))?p:r)===s?p.call(c,{name:"newprice",hash:{},data:a,loc:{start:{line:2,column:37},end:{line:2,column:49}}}):p)+'</span>\r\n        <span class="popup-oldprice">'+u(e(p=null!=(p=i(o,"oldprice")||(null!=l?i(l,"oldprice"):l))?p:r)===s?p.call(c,{name:"oldprice",hash:{},data:a,loc:{start:{line:3,column:37},end:{line:3,column:49}}}):p)+'</span>\r\n      </div>\r\n      <div class="popup-count-box">\r\n        <span class="popup-count">'+u(e(p=null!=(p=i(o,"count")||(null!=l?i(l,"count"):l))?p:r)===s?p.call(c,{name:"count",hash:{},data:a,loc:{start:{line:6,column:34},end:{line:6,column:43}}}):p)+'</span>\r\n        <span class="popup-text">'+u(e(p=null!=(p=i(o,"type")||(null!=l?i(l,"type"):l))?p:r)===s?p.call(c,{name:"type",hash:{},data:a,loc:{start:{line:7,column:33},end:{line:7,column:41}}}):p)+'</span>\r\n      </div>\r\n      <div class="popup-discont-box">\r\n        <span class="popup-discont">Save '+u(e(p=null!=(p=i(o,"discont")||(null!=l?i(l,"discont"):l))?p:r)===s?p.call(c,{name:"discont",hash:{},data:a,loc:{start:{line:10,column:41},end:{line:10,column:52}}}):p)+"</span>\r\n      </div>\r\n"},useData:!0}),t=o;exports.default=t;
 },{"handlebars/dist/handlebars.runtime":"pAws"}],"IP58":[function(require,module,exports) {
-module.exports="/Topfollow-test/trending_up.c54ac6a8.svg";
+module.exports="/topfollow-test/trending_up.c54ac6a8.svg";
 },{}],"X6xj":[function(require,module,exports) {
-module.exports="/Topfollow-test/cloud_check.a8244e4f.svg";
+module.exports="/topfollow-test/cloud_check.a8244e4f.svg";
 },{}],"f8cE":[function(require,module,exports) {
-module.exports="/Topfollow-test/hide.cf043102.svg";
+module.exports="/topfollow-test/hide.cf043102.svg";
 },{}],"qEIP":[function(require,module,exports) {
-module.exports="/Topfollow-test/stopwatch.ee132777.svg";
+module.exports="/topfollow-test/stopwatch.ee132777.svg";
 },{}],"CbmM":[function(require,module,exports) {
-module.exports="/Topfollow-test/credit_card.0481cc81.svg";
+module.exports="/topfollow-test/credit_card.0481cc81.svg";
 },{}],"OxOF":[function(require,module,exports) {
-module.exports="/Topfollow-test/minus.7bc8048e.svg";
+module.exports="/topfollow-test/minus.7bc8048e.svg";
 },{}],"eOPU":[function(require,module,exports) {
-module.exports="/Topfollow-test/plus.46a20369.svg";
+module.exports="/topfollow-test/plus.46a20369.svg";
 },{}],"rp28":[function(require,module,exports) {
-module.exports="/Topfollow-test/photoman@3x.0b299057.jpg";
+module.exports="/topfollow-test/photoman@3x.0b299057.jpg";
 },{}],"v94Y":[function(require,module,exports) {
-module.exports="/Topfollow-test/photoman.abb231b8.webp";
+module.exports="/topfollow-test/photoman.abb231b8.webp";
 },{}],"pjtU":[function(require,module,exports) {
-module.exports="/Topfollow-test/photoman@2x.f26dec26.webp";
+module.exports="/topfollow-test/photoman@2x.f26dec26.webp";
 },{}],"D5mk":[function(require,module,exports) {
-module.exports="/Topfollow-test/photoman@3x.dd402c11.webp";
+module.exports="/topfollow-test/photoman@3x.dd402c11.webp";
 },{}],"QAGW":[function(require,module,exports) {
-module.exports="/Topfollow-test/sprite.7ef6fabf.svg";
+module.exports="/topfollow-test/sprite.7ef6fabf.svg";
 },{}],"f9V3":[function(require,module,exports) {
 "use strict";Object.defineProperty(exports,"__esModule",{value:!0}),exports.reviews=exports.questions=exports.likes=exports.folowers=exports.benefits=void 0;var e=p(require("../images/svgs/trending_up.svg")),t=p(require("../images/svgs/cloud_check.svg")),i=p(require("../images/svgs/hide.svg")),o=p(require("../images/svgs/stopwatch.svg")),s=p(require("../images/svgs/credit_card.svg")),u=p(require("../images/svgs/minus.svg")),r=p(require("../images/svgs/plus.svg")),n=p(require("../images/bg_reviewpage/photoman@3x.jpg")),a=p(require("../images/bg_reviewpage/photoman.webp")),d=p(require("../images/bg_reviewpage/photoman@2x.webp")),l=p(require("../images/bg_reviewpage/photoman@3x.webp")),c=p(require("../images/sprite.svg"));function p(e){return e&&e.__esModule?e:{default:e}}var f=[{id:"fol-1",newprice:2.97,oldprice:3.3,count:100,type:"Followers",discont:"10%"},{id:"fol-2",newprice:5.6,oldprice:6.6,count:200,type:"Followers",discont:"15%"},{id:"fol-3",newprice:6.8,oldprice:8.3,count:250,type:"Followers",discont:"18%"},{id:"fol-4",newprice:7.9,oldprice:9.9,count:300,type:"Followers",discont:"20%"},{id:"fol-5",newprice:9.9,oldprice:13.2,count:400,type:"Followers",discont:"25%"},{id:"fol-6",newprice:11.5,oldprice:16.5,count:500,type:"Followers",discont:"30%"}];exports.folowers=f;var g=[{id:"like-1",newprice:1.8,oldprice:2,count:100,type:"Likes",discont:"10%"},{id:"like-2",newprice:3.4,oldprice:4,count:200,type:"Likes",discont:"15%"},{id:"like-3",newprice:4.1,oldprice:5,count:250,type:"Likes",discont:"18%"},{id:"like-4",newprice:4.8,oldprice:6,count:300,type:"Likes",discont:"20%"},{id:"like-5",newprice:6,oldprice:8,count:400,type:"Likes",discont:"25%"},{id:"like-6",newprice:7,oldprice:10,count:500,type:"Likes",discont:"30%"}];exports.likes=g;var m=[{id:"ben-1",icon:e.default,text:"High Quality"},{id:"ben-2",icon:t.default,text:"Drop protection"},{id:"ben-3",icon:i.default,text:"No password needed"},{id:"ben-4",icon:o.default,text:"Instant delivery"},{id:"ben-5",icon:s.default,text:"Secure payment"}];exports.benefits=m;var v=[{id:"faq-1",iconMinus:u.default,iconPlus:r.default,question:"Tell Us What You Need",text:"Want to get your social media marketing trending? See your personal Instagram engagement skyrocket? Attract a wider audience for your Insta page? Our Twicsy staff can design a strategy that meets your goals – or you can choose from our proven, pre-designed likes, view count, and Instagram follower packages."},{id:"faq-2",iconMinus:u.default,iconPlus:r.default,question:"Question",text:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut voluptate eum vero incidunt atque porro numquam fugit, perferendis, neque sint, provident reiciendis. Sit quos harum laudantium fugit consequuntur sed magni?"},{id:"faq-3",iconMinus:u.default,iconPlus:r.default,question:"Question",text:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut voluptate eum vero incidunt atque porro numquam fugit, perferendis, neque sint, provident reiciendis. Sit quos harum laudantium fugit consequuntur sed magni?"},{id:"faq-4",iconMinus:u.default,iconPlus:r.default,question:"Question",text:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut voluptate eum vero incidunt atque porro numquam fugit, perferendis, neque sint, provident reiciendis. Sit quos harum laudantium fugit consequuntur sed magni?"}];exports.questions=v;var q=[{id:"rev-1",name:"Mike",foto0:n.default,foto1:a.default,foto2:d.default,foto3:l.default,star:c.default,vote:4.5,text:"Love this app so much!"},{id:"rev-2",name:"Mike",foto0:n.default,foto1:a.default,foto2:d.default,foto3:l.default,star:c.default,vote:4.8,text:"Love this app so much!"},{id:"rev-3",name:"Mike",foto0:n.default,foto1:a.default,foto2:d.default,foto3:l.default,star:c.default,vote:5,text:"Love this app so much!"},{id:"rev-4",name:"Mike",foto0:n.default,foto1:a.default,foto2:d.default,foto3:l.default,star:c.default,vote:4,text:"Love this app so much!"},{id:"rev-5",name:"Mike",foto0:n.default,foto1:a.default,foto2:d.default,foto3:l.default,star:c.default,vote:5,text:"Love this app so much!"}];exports.reviews=q;
 },{"../images/svgs/trending_up.svg":"IP58","../images/svgs/cloud_check.svg":"X6xj","../images/svgs/hide.svg":"f8cE","../images/svgs/stopwatch.svg":"qEIP","../images/svgs/credit_card.svg":"CbmM","../images/svgs/minus.svg":"OxOF","../images/svgs/plus.svg":"eOPU","../images/bg_reviewpage/photoman@3x.jpg":"rp28","../images/bg_reviewpage/photoman.webp":"v94Y","../images/bg_reviewpage/photoman@2x.webp":"pjtU","../images/bg_reviewpage/photoman@3x.webp":"D5mk","../images/sprite.svg":"QAGW"}],"iEqS":[function(require,module,exports) {
@@ -53,4 +53,4 @@ module.exports="/Topfollow-test/sprite.7ef6fabf.svg";
 },{}],"Focm":[function(require,module,exports) {
 "use strict";require("./styles/main.scss"),require("./js/buy"),require("./js/faq"),require("./js/review"),require("./js/form-service"),require("./js/popup-service");
 },{"./styles/main.scss":"LDUH","./js/buy":"iEqS","./js/faq":"DnZU","./js/review":"KR3l","./js/form-service":"dnsO","./js/popup-service":"RtMm"}]},{},["Focm"], null)
-//# sourceMappingURL=/Topfollow-test/src.1ba08b11.js.map
+//# sourceMappingURL=/topfollow-test/src.a647bffd.js.map
